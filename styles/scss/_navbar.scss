@@ -1,10 +1,15 @@
 .navbar {
     display: flex;
-    // position: fixed;
+    position: fixed;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
     height: 64px;
-    margin: 0 2.5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2.5%;
+    background-color: white;
 
     >p {
         font-weight: $fontWeight1;
@@ -22,17 +27,16 @@
         }
 
         &-item {
-            transition: .2s;
-
-            &:hover {
-                transform: scale(1.2);
-                opacity: .75;
-            }
 
             >a {
                 text-decoration: none;
                 color: black;
                 transition: .2s;
+
+                &:hover {
+                    color: $colorRb;
+                }
+
             }
         }
     }
