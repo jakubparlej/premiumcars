@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    // position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    margin: 0 2.5%;
+
+    >p {
+        font-weight: $fontWeight1;
+        font-size: 1rem;
+        letter-spacing: 0.3em;
+    }
+
+    &__menu {
+        width: 480px;
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+
+        &-item {
+            transition: .2s;
+
+            &:hover {
+                transform: scale(1.2);
+                opacity: .75;
+            }
+
+            >a {
+                text-decoration: none;
+                color: black;
+                transition: .2s;
+            }
+        }
+    }
+}
