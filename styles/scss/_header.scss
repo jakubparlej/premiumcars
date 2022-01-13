@@ -24,27 +24,6 @@
     &__links {
         display: flex;
         justify-content: center;
-    }
-
-    &__cars {
-        margin-right: 1.5rem;
-
-        >a {
-            @include linksStyle(0.875, $fontWeight2, none, $colorRb, .3rem);
-        }
-
-        >.fa-chevron-right {
-            color: $colorRb;
-        }
-    }
-
-    &__more {
-        >a {
-            @include linksStyle(0.875, $fontWeight2, none, $colorRb, .3rem);
-        }
-
-        >.fa-chevron-right {
-            color: $colorRb;
-        }
+        gap: 1rem;
     }
 }

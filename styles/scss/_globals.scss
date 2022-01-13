@@ -1,0 +1,11 @@
+.link {
+    text-decoration: none;
+    color: $blue;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .2s;
+
+    &:hover {
+        color: $black;
+    }
+}

@@ -12,7 +12,7 @@
     background-color: white;
 
     >p {
-        font-weight: $fontWeight1;
+        font-weight: 500;
         font-size: 1rem;
         letter-spacing: 0.3em;
         text-transform: uppercase;
@@ -35,7 +35,7 @@
                 transition: .2s;
 
                 &:hover {
-                    color: $colorRb;
+                    color: $blue;
                 }
 
             }

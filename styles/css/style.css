@@ -59,7 +59,7 @@ html {
 }
 
 .navbar__menu-item > a:hover {
-  color: royalblue;
+  color: #1C6BBA;
 }
 
 .header {
@@ -94,33 +94,19 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 1rem;
 }
 
-.header__cars {
-  margin-right: 1.5rem;
-}
-
-.header__cars > a {
-  font-size: 0.875;
-  font-weight: 600;
+.link {
   text-decoration: none;
-  color: royalblue;
-  margin-right: 0.3rem;
-}
-
-.header__cars > .fa-chevron-right {
-  color: royalblue;
-}
-
-.header__more > a {
-  font-size: 0.875;
+  color: #1C6BBA;
+  font-size: 1rem;
   font-weight: 600;
-  text-decoration: none;
-  color: royalblue;
-  margin-right: 0.3rem;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-.header__more > .fa-chevron-right {
-  color: royalblue;
+.link:hover {
+  color: #141414;
 }
 /*# sourceMappingURL=style.css.map */
