@@ -46,13 +46,14 @@ html {
 
 @media only screen and (max-width: 767px) {
   .navbar__menu {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -100%;
     bottom: 0;
     width: 60%;
     height: 100vh;
+    padding: 2rem;
     background: #fff;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -61,7 +62,13 @@ html {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-top: 10rem;
+    -webkit-transition: right 0.5s ease;
+    transition: right 0.5s ease;
   }
+}
+
+.navbar__menu--active {
+  right: 0;
 }
 
 .navbar__menu-list {
@@ -105,6 +112,38 @@ html {
 
 .navbar__menu-item > a:hover {
   color: #1C6BBA;
+}
+
+.menuBtn {
+  width: 2rem;
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
+
+.menuBtn span {
+  width: 2rem;
+  height: 2px;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 767px) {
+  .menuBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header {

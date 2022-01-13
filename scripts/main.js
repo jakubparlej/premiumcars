@@ -1,5 +1,16 @@
-// Main js file
+const menu = document.querySelector(".navbar__menu");
+const menuBtn = document.querySelector("#menuBtn");
 
-// Tutaj umieść Kuba obiekt cars
+let isMenuOpen = false;
 
-const cars = [];
+const setMenuOpen = () => {
+  if (isMenuOpen) {
+    menu.classList.toggle("navbar__menu--active");
+    isMenuOpen = !isMenuOpen;
+  } else {
+    menu.classList.toggle("navbar__menu--active");
+    isMenuOpen = !isMenuOpen;
+  }
+};
+
+menuBtn.addEventListener("click", setMenuOpen);

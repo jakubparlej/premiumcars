@@ -23,17 +23,23 @@
     display: flex;
 
     @include breakpoint-down("md") {
-      display: none;
+      display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: -100%;
       bottom: 0;
       width: 60%;
       height: 100vh;
+      padding: 2rem;
       background: #fff;
       justify-content: center;
       align-items: flex-start;
       padding-top: 10rem;
+      transition: right 0.5s ease;
+    }
+
+    &--active {
+      right: 0;
     }
 
     &-list {
@@ -64,5 +70,26 @@
         }
       }
     }
+  }
+}
+
+.menuBtn {
+  width: 2rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+
+  span {
+    width: 2rem;
+    height: 2px;
+    background-color: #000;
+  }
+
+  @include breakpoint-down("md") {
+    display: flex;
   }
 }
