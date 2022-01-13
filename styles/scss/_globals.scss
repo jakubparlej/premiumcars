@@ -1,11 +1,41 @@
 .link {
-    text-decoration: none;
-    color: $blue;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: .2s;
+  text-decoration: none;
+  color: $blue;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s;
 
-    &:hover {
-        color: $black;
-    }
+  &:hover {
+    color: $black;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+
+  @include breakpoint-down("md") {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  @include breakpoint-down("md") {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.margin {
+  margin: 0 4rem;
 }

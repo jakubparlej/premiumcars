@@ -1,11 +1,15 @@
-// "format": "expanded",
-// "extensionName": ".css",
-// "savePath":"~/../css/"
+// "liveSassCompile.settings.formats": [
+//     {
+//       "format": "expanded",
+//       "extensionName": ".css",
+//       "savePath": "~/../css/"
+//     }
+//   ],
 
-@import 'variables';
-@import 'mixins';
-@import 'reset';
-@import 'main';
-@import 'navbar';
-@import 'header';
-@import 'globals';
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "main";
+@import "navbar";
+@import "header";
+@import "globals";

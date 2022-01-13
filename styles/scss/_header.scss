@@ -1,29 +1,31 @@
 .header {
-    position: relative;
-    z-index: 0;
-    margin-top: 64px;
-    background-image: url("/assets/images/Volvo.jpg");
-    background-repeat: no-repeat;
-    height: 1016px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  z-index: 0;
+  margin-top: 64px;
+  background-image: url("/assets/images/Volvo.jpg");
+  background-repeat: no-repeat;
+  height: 1016px;
 
-    &__content {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
+  @include breakpoint-down("md") {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
 
-        >h1 {
-            font-weight: 700;
-            font-size: 4rem;
-            width: 1000px;
-            margin-bottom: 2.5rem;
-        }
+  &__content {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-down("md") {
+      margin-bottom: 2rem;
     }
+  }
 
-    &__links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
